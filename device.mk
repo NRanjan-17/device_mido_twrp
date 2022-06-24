@@ -42,3 +42,7 @@ PRODUCT_SYSTEM_PROPERTY_BLACKLIST += \
 # Vibrator
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/proprietary/vibrator/system/,$(TARGET_COPY_OUT_RECOVERY)/root/system/)
+
+# Keystore
+PRODUCT_PACKAGES += \
+    android.system.keystore2
