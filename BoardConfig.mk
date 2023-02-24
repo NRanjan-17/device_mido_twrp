@@ -94,6 +94,19 @@ TW_NO_USB_STORAGE := true
 TW_INCLUDE_REPACKTOOLS := true
 TW_HAS_EDL_MODE := true
 
+# SHRP Specific Flags
+SHRP_DEVICE_CODE := mido
+SHRP_PATH := device/xiaomi/mido
+SHRP_MAINTAINER := NRanjan-17
+SHRP_REC_TYPE := Treble
+SHRP_REC := /dev/block/bootdevice/by-name/recovery
+SHRP_DEVICE_TYPE := A-Only
+SHRP_EDL_MODE := 1
+SHRP_EXTERNAL := /sdcard1
+SHRP_OTG := /usb_otg
+SHRP_FLASH := 1
+
+
 # TWRP Debug Flags
 #TWRP_EVENT_LOGGING := true
 TARGET_USES_LOGD := true
