@@ -8,6 +8,7 @@ system_ext                                         /system_ext    ext4      ro,b
 product                                            /product       ext4      ro,barrier=1,discard                                          wait,logical
 vendor                                             /vendor        ext4      ro,barrier=1,discard                                          wait,logical
 odm                                                /odm           ext4      ro,barrier=1,discard                                          wait,logical
+/dev/block/bootdevice/by-name/oem                  /metadata      ext4      nosuid,nodev,noatime,discard                                  wait,check,formattable
 /dev/block/bootdevice/by-name/boot                 /boot          emmc      defaults                                                      defaults
 /dev/block/bootdevice/by-name/recovery             /recovery      emmc      defaults                                                      defaults
 
