@@ -7,7 +7,7 @@
 
 /system_image   emmc   /dev/block/bootdevice/by-name/system
 /vendor_image   emmc   /dev/block/bootdevice/by-name/cust
-/data           ext4   /dev/block/bootdevice/by-name/userdata                    flags=length=-16384;fileencryption=aes-256-xts
+/data           ext4   /dev/block/bootdevice/by-name/userdata                    flags=fileencryption=aes-256-xts:aes-256-cts;metadata_encryption=aes-256-xts;fsflags="discard"
 /metadata       ext4   /dev/block/bootdevice/by-name/oem                         flags=display="Metadata";fsflags="discard";wipeingui
 /firmware       vfat   /dev/block/bootdevice/by-name/modem                       flags=display="Firmware";mounttodecrypt
 /persist        ext4   /dev/block/bootdevice/by-name/persist                     flags=display="Persist"
