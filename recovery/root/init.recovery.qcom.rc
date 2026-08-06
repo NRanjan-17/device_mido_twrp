@@ -27,6 +27,10 @@
 
 import /init.recovery.qcom_decrypt.rc
 
+# DT2W
+on init
+    write /proc/touchpanel/enable_dt2w 1
+
 on fs
     wait /dev/block/platform/soc/${ro.boot.bootdevice}
     symlink /dev/block/platform/soc/${ro.boot.bootdevice} /dev/block/bootdevice
